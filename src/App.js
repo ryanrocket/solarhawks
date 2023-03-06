@@ -1,6 +1,6 @@
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-// import Default from './assets/page';
+import Default from './assets/page';
 import Index from './components/Index';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -8,7 +8,7 @@ import Contact from './components/Contact';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  // Default()
+  Default()
   return (
     <div>
       <NavBar />

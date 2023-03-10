@@ -5,7 +5,8 @@ import Index from './components/Index';
 import About from './components/About';
 import Contact from './components/Contact';
 
-import { Routes, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+
 
 function App() {
   Default()
@@ -13,12 +14,10 @@ function App() {
     <div>
       <NavBar />
       <div className="content" style={{marginTop: '65px'}}>
-        <Routes>
-          <Route exact path="/" component={Index} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-        </Routes>
-       </div>
+        <Route path="/" exact component={Index} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/about" exact component={About} />
+      </div>
       <Footer />
     </div>
   );

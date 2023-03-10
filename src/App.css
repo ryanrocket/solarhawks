@@ -99,6 +99,8 @@ dl > dt {font-size: 12px!important;}
 footer {
   background-color: #FAFAFA!important;
   border-top: 1px solid #EAEAEA!important;
+  position: relative;
+  bottom: 0;
 }
 .subfoot {
   font-weight: 400;

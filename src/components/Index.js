@@ -12,8 +12,8 @@ import { Instagram, Github, Linkedin, Mail } from '@geist-ui/react-icons'
 class Index extends React.Component {
     render() {
         return (
-            <div style={{position: 'relative'}}>
-                <div style={{position:'relative', width: '100%'}}>
+            <div style={{position: 'relative', width: '100%', height: '100%'}}>
+                <div style={{position:'relative', width: '100%', height: '100%'}}>
                     <div style={{position: "absolute", top: '0', left: '0', width: '100%', height: '100%'}}>
                         <Section style={{height: '100%'}}>
                             <Container style={{height:'100%'}}>
@@ -25,7 +25,6 @@ class Index extends React.Component {
                         </Section>
                     </div>
                 </div>
-                
             </div>
         )
     }

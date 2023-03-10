@@ -3,6 +3,8 @@ import React from 'react';
 import { Container } from 'reactbulma';
 import { Text, Button } from '@geist-ui/react';
 
+import Default from '../assets/page';
+
 class NavBar extends React.Component {
     render() {
         // eslint-disable-next-line
@@ -14,7 +16,7 @@ class NavBar extends React.Component {
                             <a className="navbar-item" href="/" style={{padding: '0', maxHeight: '60px'}}>
                                 <Text h3 style={{padding: '8px 20px', margin: '0'}}>South River <b style={{fontWeight: '800'}}>Solar Hawks</b></Text>
                             </a>
-                            <a href="#hamburger" role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>

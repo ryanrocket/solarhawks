@@ -51,7 +51,9 @@
       }
 
       document.addEventListener('DOMContentLoaded', () => {
+        console.log("[DEBUG] DOMContentLoaded trigger.")
         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        console.log("[DEBUG] Found " + $navbarBurgers.length + " hamburgers.")
         if ($navbarBurgers.length > 0) {
           $navbarBurgers.forEach( el => {
           el.addEventListener('click', () => {
@@ -59,10 +61,10 @@
             const $target = document.getElementById(target);
             el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
+            console.log("[DEBUG] Hamburger clicked.")
           });
           });
         }
-        console.log("Hamburger listener added to que.")
 
         // metrics
         window.allocateAdr = (a) => {window.ip = a.ip || null;}
@@ -72,5 +74,24 @@
         // if(window.location.pathname === "/" || window.location.pathname === "" || window.location.pathname === "/contact" || window.location.pathname === "/swapa" || window.location.pathname === "/wans-research") {window.addScript("/Gradient.js");}
       });
     };
+    function DefaultSkipped() {
+      console.log("[DEBUG] DOMContentLoaded trigger.")
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        console.log("[DEBUG] Found " + $navbarBurgers.length + " hamburgers.")
+        if ($navbarBurgers.length > 0) {
+          $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+            console.log("[DEBUG] Hamburger clicked.")
+          });
+          });
+        }
+    }
+    setTimeout(() => {
+      DefaultSkipped();
+    }, 500)
   </script>
 </html>

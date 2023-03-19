@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container, Section } from 'reactbulma';
-import { Text, Spacer } from '@geist-ui/react';
+import { Text, Spacer, Image } from '@geist-ui/react';
 import Banner from './Banner';
 // import Typed from 'react-typed';
 import Lines from './Lines';
@@ -9,22 +9,32 @@ import PreFoot from './PreFoot';
 import HorzLine from './HorzLine.js';
 import { Instagram, Github, Linkedin, Mail } from '@geist-ui/react-icons'
 
+// IMAGES
+/*
+
+Dear freshman noobs,
+I hope you're suffering trying to learn React. In any case, here is how you should 
+import new images to update our gallery and such...
+
+import {name of image} from '{relative path to image}'
+
+And then to include it...
+
+<Image width={___} height={___} style={{any other css}} src={name of image} />
+
+Goodluck! 
+
+*/
+import BannerIMG from '../img/indexBanner.png'
+
 class Index extends React.Component {
     render() {
         return (
-            <div style={{position: 'relative', width: '100%', height: '100%'}}>
-                <div style={{position:'relative', width: '100%', height: '100%'}}>
-                    <div style={{position: "absolute", top: '0', left: '0', width: '100%', height: '100%'}}>
-                        <Section style={{height: '100%'}}>
-                            <Container style={{height:'100%'}}>
-                                <Text h1 className="colorthru-text hero-text">Hello, I'm Ryan Wans</Text>
-                                <Text h1 className="hero-sub-text" style={{paddingTop:'50px', maxWidth: '800px'}}>
-                                    Test
-                                </Text>
-                            </Container>
-                        </Section>
-                    </div>
-                </div>
+            <div style={{position: 'relative'}}>
+                <Image style={{height: "auto", maxHeight: '400px', width: '100%', objectFit: 'cover'}} className="sc-banner" src={BannerIMG} />
+                <Container style={{position: 'relative'}} >
+                    
+                </Container>
             </div>
         )
     }

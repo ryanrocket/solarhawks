@@ -64,7 +64,7 @@ html, head, body {
 .caption p {font-size: 12px!important;}
 dl > dt {font-size: 12px!important;}
 
-/* Presets */
+/* RyanWans.com Presets */
 .pre-bold {font-weight: var(--bold);}
 .pre-dark {font-weight: var(--dark);}
 .pre-minihead {font-size: 12px; font-weight: var(--bold); text-transform: uppercase;}
@@ -94,6 +94,9 @@ dl > dt {font-size: 12px!important;}
 .pre-textgrad2 {background-image: linear-gradient(90deg, var(--gradient-color-2), var(--gradient-color-4) );-webkit-text-fill-color: transparent; -webkit-background-clip: text;}
 .pre-dot-bg {background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px,#0000 0), radial-gradient(rgba(0, 0, 0, 0.08) 1px,#0000 0);background-position: 0 0,25px 25px;background-attachment: fixed;background-size: 50px 50px;}
 .pre-blogcard {border-left: black 5px solid!important;}
+
+/* Solar Car Presets */
+.sc-banner {}
 
 /* Extraneous Classes */
 footer {

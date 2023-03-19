@@ -67,7 +67,8 @@ class Index extends React.Component {
                                 <HorzLine />
                                 <Text h4 style={{ marginTop: '20px', lineHeight: '25px' }}>
                                     Cars are complicated, expensive, and very time consuming. As a high school team with limited funding, we rely on the support of our community and sponsors 
-                                    in order to achieve our goals. If you're interested in supporting our team in any fashion, we would love to <a href="/contact">hear from you!</a>
+                                    in order to achieve our goals. If you're interested in supporting our team in any fashion, we would love to <a href="/contact">hear from you!</a> We also 
+                                    appreciate any and all <a href="/donate">donations.</a>
                                 </Text>
                             </div>
                         </div>

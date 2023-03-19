@@ -30,10 +30,10 @@ import BannerIMG from '../img/indexBanner.png'
 class Index extends React.Component {
     render() {
         return (
-            <div style={{position: 'relative'}}>
-                <Image style={{height: "auto", maxHeight: '400px', width: '100%', objectFit: 'cover'}} className="sc-banner" src={BannerIMG} />
-                <Container style={{position: 'relative'}} >
-                    
+            <div style={{ position: 'relative' }}>
+                <Image style={{ height: "auto", maxHeight: '400px', width: '100%', objectFit: 'cover' }} className="sc-banner" src={BannerIMG} />
+                <Container style={{ position: 'relative' }} >
+
                 </Container>
             </div>
         )

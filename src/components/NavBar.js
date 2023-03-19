@@ -43,7 +43,7 @@ class NavBar extends React.Component {
                                 <hr className="navbar-divider" />
 
                                 <a className="navbar-item pre-minihead" href="/contact" style={{paddingLeft: '10px', paddingRight: '2px'}}>
-                                    <Button auto type="success" className="pre-minihead" size="small" style={{fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', padding: '0px 15px'}}>Contact &rarr;</Button>
+                                    <Button auto type="success" className="pre-minihead" scale={1/2} style={{fontSize: '12px', fontWeight: '600', textTransform: 'uppercase', padding: '0px 15px'}}>Contact &rarr;</Button>
                                 </a>
                             </div>
                         </div>

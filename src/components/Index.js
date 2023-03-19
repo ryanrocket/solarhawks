@@ -26,15 +26,55 @@ Goodluck!
 
 */
 import BannerIMG from '../img/indexBanner.png'
+import TeamPhoto from '../img/teamPhoto.jpg'
+import ChallengerSteering from '../img/challengerSteering.jpg'
 
 class Index extends React.Component {
     render() {
         return (
             <div style={{ position: 'relative' }}>
-                <Image style={{ height: "auto", maxHeight: '400px', width: '100%', objectFit: 'cover' }} className="sc-banner" src={BannerIMG} />
+                <div style={{ position: 'relative' }}>
+                    <Image style={{ height: "auto", maxHeight: '400px', width: '100%', objectFit: 'cover' }} className="sc-banner" src={BannerIMG} />
+                    <div className='sc-hero-align'>
+                        <Text h1 className='hero-text is-hidden-touch is-vcentered'> South River High School Solar Car Team</Text>
+                    </div>
+                </div>
                 <Container style={{ position: 'relative' }} >
-
+                    <div style={{ textAlign: 'center' }}>
+                        <Text h2 className='hero-text-mobile is-hidden-desktop'>South River High School Solar Car Team</Text>
+                    </div>
+                    <Section style={{ position: 'relative', marginTop: '10px', zIndex: '2' }}>
+                        <div className='columns'>
+                            <div className='column is-half '>
+                                <Text h1 className='pre-smlHeader'>Who We Are</Text>
+                                <HorzLine />
+                                <Text h4 style={{ marginTop: '20px', lineHeight: '25px' }}>
+                                    Founded in 2019, the South River Solar Hawks is a team comprised of students from South River High School, CAT South, and Central Middle School.
+                                    Together we are working to build a street legal, solar powered vehicle with the intent to race from Texas to California this summer ('23) in the National Solar Car Challenge.
+                                </Text>
+                            </div>
+                            <div className='column is-half has-text-centered' style={{ marginLeft: '10px' }}>
+                                <Image src={TeamPhoto} />
+                            </div>
+                        </div>
+                        <Spacer h={5} />
+                        <div className='columns'>
+                            <div className='column is-half '>
+                                <Image src={ChallengerSteering} />
+                            </div>
+                            <div className='column is-half ' style={{ marginLeft: '10px' }}>
+                                <Text h1 className='pre-smlHeader'>Support Us</Text>
+                                <HorzLine />
+                                <Text h4 style={{ marginTop: '20px', lineHeight: '25px' }}>
+                                    Cars are complicated, expensive, and very time consuming. As a high school team with limited funding, we rely on the support of our community and sponsors 
+                                    in order to achieve our goals. If you're interested in supporting our team in any fashion, we would love to <a href="/contact">hear from you!</a>
+                                </Text>
+                            </div>
+                        </div>
+                    </Section>
+                    <Lines style={{ zIndex: '0' }} />
                 </Container>
+                <PreFoot message="Interested in reaching out?" redir="/contact" button="Contact Us" />
             </div>
         )
     }

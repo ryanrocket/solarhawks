@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="content" style={{marginTop: '65px'}}>
+      <div className="content" style={{marginTop: '65px', marginBottom: '0px!important'}}>
         <Route path="/" exact component={Index} />
         <Route path="/contact" exact component={Contact} />
         <Route path="/about" exact component={About} />

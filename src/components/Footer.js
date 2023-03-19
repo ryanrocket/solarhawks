@@ -14,7 +14,7 @@ class Footer extends React.Component {
                             <br />All Rights Reserved. All Wrongs Reserved.<br />
                             <br />For any inquiries, contact <a href="mailto:support@solarhawks.org">support@solarhawks.org</a>
                             <br />
-                            Designed by Ryan Wans.
+                            Designed by <a href='https://www.linkedin.com/in/ryan-wans' target="_blank">Ryan Wans</a>.
                         </div>
                     </div>
                 </div>

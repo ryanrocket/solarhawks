@@ -26,7 +26,7 @@ function Default() {
 		window.addScript("https://api.ipify.org?format=jsonp&callback=window.allocateAdr");
 
 		// flows
-		// if(window.location.pathname === "/" || window.location.pathname === "" || window.location.pathname === "/contact" || window.location.pathname === "/swapa" || window.location.pathname === "/wans-research") {window.addScript("/Gradient.js");}
+		if(window.location.pathname === "/" || window.location.pathname === "" || window.location.pathname === "/contact" || window.location.pathname === "/swapa" || window.location.pathname === "/wans-research") {window.addScript("/Gradient.js");}
 	});
 };
 

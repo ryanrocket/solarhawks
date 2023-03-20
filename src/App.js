@@ -5,6 +5,7 @@ import Index from './components/Index';
 import About from './components/About';
 import Contact from './components/Contact';
 import Locked from './components/Locked';
+import NewContact from './components/NewContact';
 
 import { Route } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ function App() {
       <NavBar />
       <div className="content" style={{marginTop: '65px'}}>
         <Route path="/" exact component={Index} />
-        <Route path="/contact" exact component={Contact} />
+        <Route path="/contact" exact component={NewContact} />
         <Route path="/about" exact component={About} />
         <Route path="/donate" exact component={Locked} />
         <Route path="/gallery" exact component={Locked} />

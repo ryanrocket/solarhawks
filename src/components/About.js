@@ -1,10 +1,18 @@
 import React from 'react';
 import { Container, Section } from 'reactbulma';
-import { Text, Spacer, Divider } from '@geist-ui/react';
+import { Text, Spacer, Divider, Grid, Card } from '@geist-ui/react';
 import styled from 'styled-components'
 import HorzLine from './HorzLine';
 import Lines from './Lines';
 import PreFoot from './PreFoot'
+import { ArrowRightIcon } from 'evergreen-ui';
+import { StlViewer } from 'react-stl-viewer';
+const STLFile = "/Challengerv13.stl"
+const STLStyle = {
+    width: '100%',
+    height: '500px',
+    zIndex: '800'
+}
 
 const Constricted = styled.div`
     @media screen and (min-width: 1216px) {
@@ -37,8 +45,40 @@ class About extends React.Component {
                         </Section>
                     </Container>
                     <Divider />
+                    <Container style={{marginBottom: '18px', marginTop: '20px'}}>
+                        <Grid.Container gap={1} justify="center">
+                            <Grid alignContent='center' xs={12} md={6} className='sc-cutto'>
+                                <a className='sc-cut' href="#mission"><ArrowRightIcon size={12} /> OUR MISSION</a>
+                            </Grid>
+                            <Grid alignContent='center' xs={12} md={6} className='sc-cutto'>
+                                <a className='sc-cut' href="#challenge"><ArrowRightIcon size={12} /> THE CHALLENGE</a>
+                            </Grid>
+                            <Grid alignContent='center' xs={12} md={6} className='sc-cutto'>
+                                <a className='sc-cut' href="#tech"><ArrowRightIcon size={12} /> OUR TECHNOLOGY</a>
+                            </Grid>
+                            <Grid alignContent='center' xs={12} md={6} className='sc-cutto'>
+                                <a className='sc-cut' href="#sponsors"><ArrowRightIcon size={12} /> OUR SPONSORS</a>
+                            </Grid>
+                        </Grid.Container>
+                    </Container>
+                    <Divider />
                     <Container>
-                        Hello world
+                        <Section style={{position: 'relative', zIndex: '2'}} id="mission">
+                            <Text className="pre-bigHeader" b >
+                                Our Mission
+                            </Text>
+                            <HorzLine />
+                            <Spacer h={.5} />
+                            <Text h4 style={{lineHeight: '25px'}}>
+                                Project Aeolus works to automate and modernize drone fleet systems. Besides being a cofounder 
+                                of the company, my role in Project Aeolus is head of electrical and software systems. The company 
+                                exposed me to being both an engineer and entrepreneur at the same time, all while under the pressures
+                                of time. Working at Project Aeolus involved having a wide variety of tools and skills, such as serverless 
+                                functions, cloud-native applications, containerization, satellite systems, data firehoses, and more.
+                            </Text>
+                            <Spacer h={2} />
+                            <StlViewer style={STLStyle} url={STLFile} showAxes orbitControls shadows  />
+                        </Section>
                         <Lines style={{ zIndex: '0' }} />
                     </Container>
                     <PreFoot message="Interested in reaching out?" redir="/contact" button="Contact Us" />

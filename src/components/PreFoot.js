@@ -18,7 +18,7 @@ class PreFoot extends React.Component {
                             <div className="column is-half is-vcentered" style={{textAlign: 'center'}}>
                                 <Spacer y={1} />
                                 <a href={this.props.redir} style={{color: 'white!important'}}>
-                                    <Button className="is-vcentered" shadow="true" size="large" type="success"
+                                    <Button className="is-vcentered" shadow="true" size="large" type="secondary"
                                         style={{
                                             fontSize: '16px',
                                             fontWeight: '500',
@@ -26,7 +26,7 @@ class PreFoot extends React.Component {
                                             minHeight: '40px',
                                             color: '#fff!important'
                                         }}>
-                                        {this.props.button}
+                                        {this.props.button} &rarr;
                                     </Button>
                                 </a>
                             </div>

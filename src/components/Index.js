@@ -54,7 +54,7 @@ class Index extends React.Component {
                                 </Text>
                             </div>
                             <div className='column is-half has-text-centered' style={{ marginLeft: '10px' }}>
-                                <Image src={TeamPhoto} />
+                                <Image style={{ opacity: '0.9' }} src={TeamPhoto} />
                             </div>
                         </div>
                         <Spacer h={5} />
@@ -66,8 +66,8 @@ class Index extends React.Component {
                                 <Text h1 className='pre-smlHeader'>Support Us</Text>
                                 <HorzLine />
                                 <Text h4 style={{ marginTop: '20px', lineHeight: '25px' }}>
-                                    Cars are complicated, expensive, and very time consuming. As a high school team with limited funding, we rely on the support of our community and sponsors 
-                                    in order to achieve our goals. If you're interested in supporting our team in any fashion, we would love to <a href="/contact">hear from you!</a> We also 
+                                    Cars are complicated, expensive, and very time consuming. As a high school team with limited funding, we rely on the support of our community and sponsors
+                                    in order to achieve our goals. If you're interested in supporting our team in any fashion, we would love to <a href="/contact">hear from you!</a> We also
                                     appreciate any and all <a href="/donate">donations.</a>
                                 </Text>
                             </div>

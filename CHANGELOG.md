@@ -14,6 +14,6 @@ _Beta release_
 ### Changed
 - Changed color of contact button in pre-footer
 
-## Known Issues
+### Known Issues
 - Contact form not working
 - About page content missing

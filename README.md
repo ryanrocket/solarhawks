@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# South River Solar Hawks
+Internal Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installing & Running 
+*Make Sure create-react-app and NPM are properly installed*
+- Clone the repo: `git clone https://github.com/ryanrocket/solarhawks`
+- Install dependencies: `npm install`
+- Run development test server: `npm start`
 
-## Available Scripts
+## Appending/Modifying Content
+All pages and their content are stored in ,,components''. Locate the appropriate component in `/src/components` to change the raw HTML content. Re: styling. Things like content centering, alignment, and spacing are done using the Bulma library. Styling such as typography, coloring, and interactive components (buttons, cards, etc.) are done using Geist UI and Evergreen. Ensure that changes look appropriate in the development test server before commiting any new changes to the repository.
+> :warning: **Note:** It is good practice to update the `CHANGELOG.md` with every new commit you make.
 
-In the project directory, you can run:
+## Appending Images to The Gallery
+To upload image(s) to the gallery, please follow these steps. 
+- Ensure you have editor access to the Solar Hawks shared Google Drive.
+- Locate the `Solar Hawks/Media/Pictures/Website Gallery Photos` folder.
+- Upload images there.
+    - Note that anything in this folder is public to the internet, be careful
+    - Make sure they are in a readable format such as `.PNG` or `.JPG`
+    - Note that `.HEIC` images are not supported.
+- In this repository, visit `/src/assets/gallery.json` and add the following information
+```json
+[
+    ...
+    {
+        "urlcode": "URL CODE GOES HERE", // public url code of image in google drive, refer below
+        "format": "FORMAT GOES HERE", // should either be "JPG", "PNG"
+        "date": "MM/DD/YYYY", // the day you are uploading the image
+        "tags": ['electrical', 'mechanical', 'challenger', 'c1', 'team', 'business'], // only include applicable tags
+        "public": true // a boolean value for if this image should be displayed or not
+    }
+    ...
+]
+```
+- For the URL code portion, please follow these steps carefully
+    - If the original URL of the image looks something like... `https://drive.google.com/file/d/`**0B6wwyazyzml-OGQ3VUo0Z2thdmc**`/view`
+    - Then the URL code you put into the JSON file should be... **0B6wwyazyzml-OGQ3VUo0Z2thdmc**
+- Commit these changes
+- Visit the website gallery to ensure it is working as intended
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Reporting Bugs or Questions
+Need help with a bug or new modification? Make a new "issue" in the GitHub repository and I (Ryan) will do my best to get back ASAP.

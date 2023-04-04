@@ -10,7 +10,7 @@ class NavBar extends React.Component {
         // eslint-disable-next-line
         return (
             <div>
-                <nav className="navbar is-fixed-top" id="pre-id-navbar" style={{paddingTop: "10px", paddingBottom: "10px", zIndex:'999'}} role="navigation" aria-label="main navigation">
+                <nav className="navbar is-fixed-top" id="pre-id-navbar" style={{paddingTop: "10px", paddingBottom: "10px", zIndex:'900'}} role="navigation" aria-label="main navigation">
                     <Container>
                         <div className="navbar-brand">
                             <a className="navbar-item" href="/" style={{padding: '0', maxHeight: '60px'}}>
@@ -22,7 +22,7 @@ class NavBar extends React.Component {
                                 <span aria-hidden="true"></span>
                             </a>
                         </div>
-                        <div id="navbarBasicExample" className="navbar-menu" style={{zIndex: '999'}}>
+                        <div id="navbarBasicExample" className="navbar-menu" style={{zIndex: '900'}}>
                             <div className="navbar-end nav-access">                        
                                 <a className="navbar-item pre-minihead" href="/about">
                                     About

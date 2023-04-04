@@ -1,4 +1,25 @@
 # Chanelog
+
+## [1.0.4] - 2023-04-03
+_Beta release_
+
+### Added
+- New README documentation
+- Support for Gallery page
+- gallery.json database
+- Image parsing algorithm
+- Click-to-zoom feature
+
+## Known Issues
+- Contact form not working
+- Content missing from about page
+- Empty pages
+- Gallery filter not working
+
+## Planned Additions
+- Google Analytics 
+- EmailJS Integration
+
 ---
 
 ## [1.0.3] - 2023-03-22
@@ -23,6 +44,8 @@ _Beta release_
 - Finish About Page
 - Google Analytics 
 - EmailJS Integration 
+
+---
 
 ## [1.0.2] - 2023-03-20
 _Beta release_

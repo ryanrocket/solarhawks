@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Locked from './components/Locked';
 import NewContact from './components/NewContact';
+import Gallery from './components/Gallery';
 
 import { Route } from 'react-router-dom';
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="/contact" exact component={NewContact} />
         <Route path="/about" exact component={About} />
         <Route path="/donate" exact component={Locked} />
-        <Route path="/gallery" exact component={Locked} />
+        <Route path="/gallery" exact component={Gallery} />
         <Route path="/documentation" exact component={Locked} />
       </div>
       <Footer />

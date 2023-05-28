@@ -27,7 +27,7 @@ To upload image(s) to the gallery, please follow these steps.
         "urlcode": "URL CODE GOES HERE", // public url code of image in google drive, refer below
         "format": "FORMAT GOES HERE", // should either be "JPG", "PNG"
         "date": "MM/DD/YYYY", // the day you are uploading the image
-        "tags": ['electrical', 'mechanical', 'challenger', 'c1', 'team', 'business'], // only include applicable tags
+        "tags": ["electrical", "mechanical", "challenger", "c1", "team", "business"], // only include applicable tags
         "public": true // a boolean value for if this image should be displayed or not
     }
     ...
